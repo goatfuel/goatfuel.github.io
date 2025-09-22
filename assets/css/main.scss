@@ -1,0 +1,427 @@
+---
+---
+
+// Variables
+$primary-color: #FFB81C;
+$secondary-color: #1A3A5A;
+$accent-color: #E74C3C;
+$text-color: #222;
+$light-color: #fff;
+$dark-color: #000;
+$light-gray: #f5f5f5;
+
+// Fonts
+$heading-font: 'Montserrat', sans-serif;
+$body-font: 'Roboto', sans-serif;
+$button-font: 'Montserrat', sans-serif;
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Clean Background
+.grid-background {
+  display: none;
+}
+
+body {
+  font-family: $body-font;
+  font-size: 18px;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $light-color;
+  overflow-x: hidden;
+}
+
+// Container
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Typography
+.bold-text {
+  font-family: $heading-font;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $secondary-color;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-weight: 900;
+  font-family: $heading-font;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+h2 {
+  font-size: 3rem;
+  position: relative;
+  display: inline-block;
+  font-family: $heading-font;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: $primary-color;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: $heading-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: $accent-color;
+  font-weight: bold;
+}
+
+// Header
+.site-header {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo-container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
+}
+
+// Hero Section
+.hero {
+  color: $secondary-color;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero:before {
+  display: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-mascot {
+  flex: 1;
+  min-width: 300px;
+  padding: 0 20px;
+}
+
+.mascot {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+  transition: transform 0.3s ease;
+}
+
+.mascot:hover {
+  transform: translateY(-10px);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.hero h1 {
+  color: $secondary-color;
+  margin-bottom: 30px;
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.tagline-box {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 20px;
+  border: 2px solid $accent-color;
+  border-radius: 4px;
+}
+
+.tagline {
+  margin: 0;
+  font-family: $heading-font;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: $accent-color;
+  text-transform: uppercase;
+}
+
+// Content Sections
+section {
+  padding: 0;
+  position: relative;
+}
+
+/* No alternating section background colors */
+
+.section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 50px;
+}
+
+// Content Panels
+.content-panel {
+  border-radius: 8px;
+  padding: 0 40px;
+  position: relative;
+  text-align: left;
+  border-left: 3px solid $primary-color;
+  transition: transform 0.3s ease;
+}
+
+.content-panel:hover {
+  transform: translateY(-5px);
+}
+
+// Mission Points
+.mission-points {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.point {
+  flex: 1;
+  min-width: 215px;
+  margin: 15px;
+  width: 23%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.point:hover {
+  transform: translateY(-5px);
+}
+
+.point-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.point h3 {
+  color: $secondary-color;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+// Survey Section
+.survey {
+  color: $secondary-color;
+  position: relative;
+  overflow: hidden;
+}
+
+.survey:before {
+  display: none;
+}
+
+.survey .section-content {
+  position: relative;
+}
+
+.survey h2 {
+  color: $secondary-color;
+}
+
+.survey h2:after {
+  background-color: $primary-color;
+}
+
+.cta-container {
+  margin: 50px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  text-decoration: none;
+  color: $secondary-color;
+  font-family: $button-font;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 16px 36px;
+  border: 2px solid $secondary-color;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.cta-button:hover {
+  color: $accent-color;
+  border-color: $accent-color;
+  transform: translateY(-3px);
+}
+
+.cta-button:active {
+  transform: translateY(-1px);
+}
+
+.survey-note {
+  font-size: 1rem;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+// Hashtags
+.hashtags {
+  margin-top: 40px;
+}
+
+.hashtag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.hashtag {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid $primary-color;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: $secondary-color;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hashtag:hover {
+  background-color: $primary-color;
+  color: $light-color;
+  transform: translateY(-2px);
+}
+
+// Footer
+.site-footer {
+  color: $secondary-color;
+  padding: 80px 0 40px;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  margin-top: 60px;
+}
+
+.site-footer:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  background: url('../images/mountain-bg.svg') center bottom no-repeat;
+  background-size: cover;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.instagram-logo {
+  height: 30px;
+  width: 30px;
+  display: inline;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 70px 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-mascot, .hero-text {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .tagline-box {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .content-panel {
+    padding: 30px 20px;
+  }
+
+  .mission-points {
+    flex-direction: column;
+  }
+
+  .point {
+    margin: 10px 0;
+  }
+}

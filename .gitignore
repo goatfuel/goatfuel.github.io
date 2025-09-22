@@ -1,0 +1,24 @@
+# Jekyll generated files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby dependencies
+.bundle/
+vendor/
+
+# Mac OS files
+.DS_Store
+
+# Log files
+*.log
+
+# Local environment settings
+.env
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
