@@ -1,6 +1,12 @@
 ---
 layout: home
-title: Home
+title: GOAT FUEL - Energy for Champions
+description: Unlock your peak performance with GOAT FUEL, the revolutionary high-carb energy drink designed for endurance athletes and champions.
+image: /assets/images/goat-logo-transparent.png
+author: GOAT FUEL Team
+twitter:
+  card: summary_large_image
+keywords: GOAT FUEL, energy drink, endurance athletes, high-carb, performance, sports nutrition, electrolytes, marathon training, cycling, triathlon
 ---
 
 <section class="hero">

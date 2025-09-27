@@ -4,7 +4,24 @@ email: hello@goatfuel.com
 description: >-
   GOAT FUEL - Energy for Champions
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://goatfuel.com" # the base hostname & protocol for your site
+
+# Social media settings
+twitter:
+  username: goatfuel
+  card: summary_large_image
+facebook:
+  app_id: # Optional: your Facebook app ID
+  publisher: # Optional: your Facebook page URL
+  admins: # Optional: Facebook user IDs of admins
+logo: /assets/images/goat-logo-transparent.png # Path to your site logo
+social:
+  name: GOAT FUEL
+  links:
+    - https://twitter.com/goatfuel
+    - https://www.facebook.com/goatfuel
+    - https://www.instagram.com/goatfuel
+    - https://www.linkedin.com/company/goatfuel
 
 # Build settings
 markdown: kramdown
