@@ -22,18 +22,31 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Smooth scrolling for anchor links
-  var anchorLinks = document.querySelectorAll('a[href^="/#"]')
+  // Handle both root-relative (/#section) and absolute paths (/section)
+  var anchorLinks = document.querySelectorAll('a[href^="/#"], a[href="/"]')
   for (var j = 0; j < anchorLinks.length; j++) {
     anchorLinks[j].addEventListener('click', function(event) {
-      event.preventDefault()
-      var targetId = this.getAttribute('href').substring(2)
-      var targetElement = document.getElementById(targetId)
+      var href = this.getAttribute('href')
 
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop - 70,
-          behavior: 'smooth'
-        })
+      // If we're not on the homepage and the link is to a section on the homepage
+      if (window.location.pathname !== '/' && href.startsWith('/#')) {
+        event.preventDefault()
+        window.location.href = href
+        return
+      }
+
+      // If we're on the homepage and it's an anchor link
+      if (window.location.pathname === '/' && href.startsWith('/#')) {
+        event.preventDefault()
+        var targetId = href.substring(2)
+        var targetElement = document.getElementById(targetId)
+
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 70,
+            behavior: 'smooth'
+          })
+        }
       }
     })
   }
