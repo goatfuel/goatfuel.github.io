@@ -1,0 +1,21 @@
+{% comment %}
+Responsive image include that generates appropriate srcset and sizes attributes
+Usage: {% include responsive-image.html image=page.featured-image alt="Alt text" %}
+{% endcomment %}
+
+{% assign default_sizes = "(max-width: 480px) 100vw, (max-width: 768px) 75vw, 50vw" %}
+{% assign default_quality = "85" %}
+
+<img 
+  src="{{ include.image | relative_url }}?nf_resize=fit&w=800&q={{ include.quality | default: default_quality }}" 
+  srcset="{{ include.image | relative_url }}?nf_resize=fit&w=320&q={{ include.quality | default: default_quality }} 320w,
+          {{ include.image | relative_url }}?nf_resize=fit&w=480&q={{ include.quality | default: default_quality }} 480w,
+          {{ include.image | relative_url }}?nf_resize=fit&w=800&q={{ include.quality | default: default_quality }} 800w,
+          {{ include.image | relative_url }}?nf_resize=fit&w=1200&q={{ include.quality | default: default_quality }} 1200w"
+  sizes="{{ include.sizes | default: default_sizes }}"
+  alt="{{ include.alt }}"
+  class="{{ include.class }}"
+  loading="{{ include.loading | default: 'lazy' }}"
+  {% if include.width %}width="{{ include.width }}"{% endif %}
+  {% if include.height %}height="{{ include.height }}"{% endif %}
+/>

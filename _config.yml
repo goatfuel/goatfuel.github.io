@@ -38,3 +38,8 @@ exclude:
   - .jekyll-cache/
   - .git/
   - .github/
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed

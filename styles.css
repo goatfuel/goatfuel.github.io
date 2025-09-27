@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0 !important;
+}
+
 /* Modern Subtle Background */
 .grid-background {
   position: fixed;
@@ -58,7 +62,7 @@ body {
   color: var(--secondary-color);
   margin-bottom: 20px;
   letter-spacing: 2px;
-  text-shadow: 
+  text-shadow:
     3px 3px 0 var(--primary-color),
     -1px -1px 0 var(--dark-color),
     1px -1px 0 var(--dark-color),
@@ -144,7 +148,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: 
+  background:
     radial-gradient(circle, var(--neon-blue) 0%, transparent 10%),
     radial-gradient(circle, var(--neon-pink) 0%, transparent 10%);
   background-size: 60px 60px, 120px 120px;
@@ -335,7 +339,7 @@ section:nth-child(even) {
   left: 0;
   width: 100%;
   height: 100%;
-  background: 
+  background:
     radial-gradient(circle, var(--neon-blue) 0%, transparent 10%),
     radial-gradient(circle, var(--neon-pink) 0%, transparent 10%);
   background-size: 60px 60px, 120px 120px;
@@ -429,41 +433,41 @@ section:nth-child(even) {
   .container {
     padding: 0 15px;
   }
-  
+
   section {
     padding: 60px 0;
   }
-  
+
   h1 {
     font-size: 3rem;
   }
-  
+
   h2 {
     font-size: 2.2rem;
   }
-  
+
   .hero-content {
     flex-direction: column;
   }
-  
+
   .hero-mascot, .hero-text {
     width: 100%;
     margin-bottom: 30px;
   }
-  
+
   .starburst {
     width: 150px;
     height: 150px;
   }
-  
+
   .tagline {
     font-size: 0.9rem;
   }
-  
+
   .mission-points {
     flex-direction: column;
   }
-  
+
   .point {
     margin: 10px 0;
   }
