@@ -12,7 +12,7 @@ keywords: GOAT FUEL, energy drink, endurance athletes, high-carb, performance, s
 <section class="hero">
   <div class="hero-content">
     <div class="hero-mascot">
-      {% include responsive-image.html image='assets/images/goat-logo-transparent.png' alt="GOAT FUEL" class="mascot" %}
+      <img src="{{ 'assets/images/goat-logo-transparent.png' | relative_url }}" alt="GOAT FUEL" class="mascot">
     </div>
     <div class="hero-text">
       <h1 class="bold-text">Become your own <acronym title="Greatest of all time">GOAT</acronym> 🐐</h1>
