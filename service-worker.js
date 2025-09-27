@@ -2,7 +2,7 @@
 const CACHE_NAME = 'goatfuel-cache-v1';
 const urlsToCache = [
   '/',
-  '/assets/css/styles.css',
+  '/assets/css/site.css',
   '/assets/images/goat-logo-transparent.png',
   '/assets/images/mountain-bg.svg',
   '/assets/images/instagram-logo.png'
