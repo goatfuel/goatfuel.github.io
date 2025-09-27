@@ -1,10 +1,10 @@
 # Site settings
 title: GOAT FUEL
-email: hello@goatfuel.com
+email: hello@goatfuel.uk
 description: >-
   GOAT FUEL - Energy for Champions
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://goatfuel.com" # the base hostname & protocol for your site
+url: "https://goatfuel.uk" # the base hostname & protocol for your site
 
 # Social media settings
 twitter:
@@ -18,10 +18,9 @@ logo: /assets/images/goat-logo-transparent.png # Path to your site logo
 social:
   name: GOAT FUEL
   links:
-    - https://twitter.com/goatfuel
-    - https://www.facebook.com/goatfuel
-    - https://www.instagram.com/goatfuel
-    - https://www.linkedin.com/company/goatfuel
+    - https://twitter.com/drinkgoatpiss
+    - https://www.facebook.com/profile.php?id=61581237703396
+    - https://www.instagram.com/drinkgoatpiss
 
 # Build settings
 markdown: kramdown
